@@ -141,9 +141,9 @@ public class Calculator extends VBox implements EventHandler<ActionEvent>{
 		case "=":
 			if (number1.isEmpty() || number2.isEmpty() || operator == null || operator.isEmpty()) return;
 
-			int n1 = Integer.parseInt(number1);
-			int n2 = Integer.parseInt(number2);
-			int result = 0;
+			double n1 = Double.parseDouble(number1);
+			double n2 = Double.parseDouble(number2);
+			double result = 0;
 			switch (operator) {
 			case "+":
 				result = n1 + n2;
